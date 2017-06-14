@@ -1,0 +1,12 @@
+1. 다이나믹 프로젝트를 만든다.
+2. 라이브러리를 복사 한다. jquery파일도 복사
+3. 웹xml -설정한다. 일일이 코딩.
+- <servlet>
+	<servlet-name>whynot</servlet-name>
+  </servlet>
+  
+4. whynot-servlet.xml 설정
+5. jsp파일을 만들고 경로를 딴다.
+6. 자바 패키지를 만든다 ex) a01_basic
+7. 자바 클래스를 만든다 ex) A01_Whynot
+   

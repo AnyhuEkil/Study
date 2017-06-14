@@ -1,0 +1,17 @@
+0. jsp javascript, html 이상유뮤 확인.
+1.	web.xml
+	서블릿 이름 설정// <servlet-name>whynot</servlet-name>
+2.	whynot-servlet.xml
+	마이바티스 경로 설정// <property name="configLocation" value="classpath:whyNot/resource/mybatisWhyNot.xml" />
+3	mybatisWhyNot.xml
+3.1	맵퍼 경로설정 // <mapper resource="whyNot/resource/QuizMapper.xml" />
+3.2 VO 경로설정 // <typeAlias alias="qBank0003" type="whyNot.database.vo.QBank" />
+3.3	타입얼라이어스 설정(alias=타입 별칭)// <typeAlias alias="qBank0003" type="springweb.z01_dto.EmpMulti" />
+		=> QuizMapper.xml 
+		타입값 일치 시킴 // <resultMap type="qBank0003" id="qbankMap" />
+		파라미터 타입값 일치 시킴// <select id="qList004" resultMap="qbankMap02" parameterType="qBank0003">
+
+4.	QuizMapper.xml // <mapper namespace="whyNot.database.repository.QuizRep">
+5.	
+5.	QuizRep.java //
+	
