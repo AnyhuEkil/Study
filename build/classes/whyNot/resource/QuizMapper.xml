@@ -4,8 +4,8 @@
 	"http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 
 <mapper namespace="whyNot.database.repository.QuizRep">
-	<resultMap type="qBank0003" id="qbankMap003" />
-	<select id="qList02" parameterType="qBank0003" resultMap="qbankMap003">
+	<resultMap id="qBank0013" type="qBank0003"/>
+	<select id="qList0023" parameterType="qBank0003" resultMap="qBank0013">
 		select * from testquiz <!-- where quiz like '%'||#{quiz}||'%' -->
 	</select>
 <!-- 	<select id="empOne" resultType="emp" parameterType="int">

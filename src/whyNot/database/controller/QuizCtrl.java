@@ -14,9 +14,9 @@ public class QuizCtrl {
 	@Autowired(required=false)
 	private QuizService service;
 	
-	@RequestMapping("/gogo.why")
-	public String qList(@ModelAttribute("qBank") QBank sch, Model d){
-		d.addAttribute("qList001", service.qList002(sch));
+	@RequestMapping("/gogo.not")
+	public String qList1001(@ModelAttribute("qListJSP222") QBank sch, Model d){
+		d.addAttribute("qListJSP", service.qList0004(sch));
 		return "z77_whyNot/quiz01_List";
 	}
 }

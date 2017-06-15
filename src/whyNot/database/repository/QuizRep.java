@@ -8,6 +8,6 @@ import whyNot.database.vo.QBank;
 
 @Repository
 public interface QuizRep {
-	public ArrayList<QBank> qList02(QBank sch);
+	public ArrayList<QBank> qList0023(QBank sch);
 
 }

@@ -1,17 +1,67 @@
+시작은 서버를 돌리면서 시작된다? 아 모르겟다...
+서버를 돌리면,
+web.xml을 통해서 통해서, XXXXX-servlet.xml로 연결되고
+servlet.xml에서 필요한 연결과, 파일들을 생성해놓는다.
+
+/gogo.why
+인터넷 주소창에 입력을 하면, 
+
+끝!
+
+그러고나면, 
+
+
 0. jsp javascript, html 이상유뮤 확인.
+
 1.	web.xml
 	서블릿 이름 설정// <servlet-name>whynot</servlet-name>
+
 2.	whynot-servlet.xml
 	마이바티스 경로 설정// <property name="configLocation" value="classpath:whyNot/resource/mybatisWhyNot.xml" />
+
 3	mybatisWhyNot.xml
 3.1	맵퍼 경로설정 // <mapper resource="whyNot/resource/QuizMapper.xml" />
-3.2 VO 경로설정 // <typeAlias alias="qBank0003" type="whyNot.database.vo.QBank" />
-3.3	타입얼라이어스 설정(alias=타입 별칭)// <typeAlias alias="qBank0003" type="springweb.z01_dto.EmpMulti" />
+3.2 VO 경로설정 // <typeAlias type="whyNot.database.vo.QBank" />
+3.3	얼라이어스 설정(alias=별칭)// <typeAlias alias="qBank0003" />
 		=> QuizMapper.xml 
-		타입값 일치 시킴 // <resultMap type="qBank0003" id="qbankMap" />
-		파라미터 타입값 일치 시킴// <select id="qList004" resultMap="qbankMap02" parameterType="qBank0003">
+		타입값 일치 시킴 // <resultMap type="qBank0003" />
+3.4 얼라이어스 설정 // <typeAlias alias="xxxxx" type="whyNot.database.vo.XxXxX" />
+		파라미터 타입값 일치 시킴// <select parameterType="XxXxX">
+	3.3과 3.4를 봣을때, 
 
-4.	QuizMapper.xml // <mapper namespace="whyNot.database.repository.QuizRep">
-5.	
-5.	QuizRep.java //
+4.	QuizMapper.xml
+4.0	레파지토리 맵핑 // <mapper namespace="whyNot.database.repository.QuizRep">
+4.1 resultMap id값 // <resultMap id="qBank0013" />
+	필요한 구문(?)에 resultMap값 // <select resultMap="qBank0013">
+4.2	현재 구문에 id값 설정 // <select id="qList0023" >
+	레파지토리의 메서드명 // public ArrayList<QBank> qList0023(QBank sch);
+	서비스의 리턴타입 메서드명 // return dao.qList0023(sch);
+	=> 이 과정속에서, VO에 데이터값이 할당된다(?)	
+4.3 QuizRep.java 설정 끝 + interface 가 뭔가??
+
+
+5.	QuizService.java
+5.1	모르겟음 // @Autowired(required=false) 
+5.2	VO값 넣어주기, 두곳에 모두 QBank // public ArrayList<QBank> qList002(QBank sch){
+5.3	메서드 선언 qList0004 // public ArrayList<QBank> qList0004(QBank sch){
+	컨트롤러 부에서 사용 // d.addAttribute("qList001", service.qList0004(sch));
+
+
+6.	QuizCtrl.java
+6.1 서비스클래스 불러옴 // private QuizService service;
+6.2 리퀘스트맵핑 // @RequestMapping("/gogo.why")
+6.2	모르겠음 // public String qList1001(@ModelAttribute("qListJSP222") QBank sch, Model d){
+			// @ModelAttribute("qBank") ex)${emp.ename}쓰는 용도긴한데.. @ModelAttribute이게 뭐하는거?
+6.3 저장된 데이터 VIEW쪽으로 넘김 // d.addAttribute("qListJSP", service.qList0004(sch));
+	quiz01_List.jsp에서 받음 // <c:forEach items="${qListJSP }">
+	
+7. z77_whyNot/quiz01_List.jsp
+7.1	var값 설정 // <c:forEach var="qBankJSP" >
+	데이터 분배 // No : <div>${qBankJspOnly.no}</div>
+	
+	
+	
+	
+	
+	
 	

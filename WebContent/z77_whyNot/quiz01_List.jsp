@@ -13,6 +13,7 @@
 <script src="http://code.jquery.com/jquery-3.2.1.js"></script>
 <script type="text/javascript">
 	$(document).ready(function() {
+		
 	});
 	
 	
@@ -33,10 +34,10 @@
 			<div class="yTd yW20">No</div>
 			<div class="yTd yW80">Quiz</div>
 		</div>
-		<c:forEach var="qBank" items="${quizList }">
+		<c:forEach var="qBankJspOnly" items="${qListJSP }">
 			<div class="yTr">
-				<div class="yTd yW20">${qBank.no }</div>
-				<div class="yTd yW80">${qBank.quiz }</div>
+				<div class="yTd yW20">${qBankJspOnly.no}</div>
+				<div class="yTd yW80">${qBankJspOnly.quiz}</div>
 			</div>
 		</c:forEach>
 	</div>
