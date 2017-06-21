@@ -16,26 +16,26 @@ public interface A01_EmpRep {
 //	parameterType="springweb.z01_dto.Emp"
 //	ë°ì´í„° ê²°ê³¼ ì²˜ë¦¬ ArrayList<VO>
 //	
-	public ArrayList<Emp> emplist(Emp sch);
-//	return : Emp  ì…ë ¥ : empno(int)
-//	id : empOne
-//	resultType="emp"
-//	parameterType="int"
-	public Emp empOne(int empno);
-/*  return : void   ì…ë ¥ : Emp
- * 	id : empUpdate
- *  parameterType: emp 
- * */	
-	public void empUpdate(Emp upt);
-/*  ename, jobÀÌ ÀÖÀ» ¶§¿¡ Á¤È®ÇÑ °ªÀ» ºñ±³ÇÏ¿© µ¥ÀÌÅÍ ·ÎµùÃ³¸®
- * */	
+//	public ArrayList<Emp> empAist(Emp sch);
+////	return : Emp  ì…ë ¥ : empno(int)
+////	id : empOne
+////	resultType="emp"
+////	parameterType="int"
+//	public Emp empOne(int empno);
+///*  return : void   ì…ë ¥ : Emp
+// * 	id : empUpdate
+// *  parameterType: emp 
+// * */	
+//	public void empUpdate(Emp upt);
+///*  ename, jobï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Îµï¿½Ã³ï¿½ï¿½
+// * */	
 	public ArrayList<Emp> empList02(Emp sch);
 	
-// ±Ş¿©¿¡ µû¶ó ºÎ¼­ ·Îµù µ¿Àû SQL
+/*// ï¿½Ş¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Î¼ï¿½ ï¿½Îµï¿½ ï¿½ï¿½ï¿½ï¿½ SQL
 	public ArrayList<Emp> empList03(Emp sch);
 	
-//	arraylist deptno ¸ÖÆ¼ µ¿Àû µ¥ÀÌÅÍ Ã³¸®..
+//	arraylist deptno ï¿½ï¿½Æ¼ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ã³ï¿½ï¿½..
 	public ArrayList<Emp> empMultiList(EmpMulti sch);
-	
+	*/
 	
 }

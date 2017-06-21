@@ -15,17 +15,17 @@ public class A01_EmpService {
 	private A01_EmpRep dao;
 
 	
-	public ArrayList<Emp> empList(Emp sch){
+
+	public ArrayList<Emp> empList02(Emp sch){
+		return dao.empList02(sch);
+	}
+/*	public ArrayList<Emp> empList(Emp sch){
 		
 		if(sch.getEname()==null){
 			sch.setEname("");
 		}
-		return dao.emplist(sch);
+		return dao.empAist(sch);
 	}
-	public ArrayList<Emp> empList02(Emp sch){
-		return dao.empList02(sch);
-	}
-	
 	public Emp empOne(int empno){
 		// 비지니스 로직 처리..
 		return dao.empOne(empno);
@@ -37,5 +37,5 @@ public class A01_EmpService {
 	public ArrayList<Emp> empMultiList(EmpMulti sch){
 		
 		return dao.empMultiList(sch);
-	}
+	}*/
 }

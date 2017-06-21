@@ -26,7 +26,7 @@ public class A01_EmpCtrl {
 		
 		return "c01_database/a01_empList";
 	}
-	@RequestMapping("/emp_my.do")
+/*	@RequestMapping("/emp_my.do")
 	public String empDetail(@RequestParam(value="empno",
 								defaultValue="0") int empno, Model d){
 		System.out.println("?곸꽭?붾㈃ empno:"+empno);
@@ -49,7 +49,7 @@ public class A01_EmpCtrl {
 		
 		return "c01_database/a05_empMultiList";
 	}	
-	
+	*/
 }
 
 
